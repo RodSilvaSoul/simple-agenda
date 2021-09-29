@@ -1,0 +1,54 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modalOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+
+  inset: 0;
+
+  padding: 1.5rem;
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+  overflow: auto;
+
+  animation: fadeIn 0.3s;
+
+  z-index: 99999999999999;
+}
+
+@keyframes fadeInAndScale {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modalContent {
+  overflow: auto;
+  position: relative;
+  margin: auto 0;
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  background-color: #ffff;
+
+  animation: fadeInAndScale 0.4s ease-in;
+
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+}
