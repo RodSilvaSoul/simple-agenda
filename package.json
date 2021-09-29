@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^2.8.0",
+    "caniuse-lite": "^1.0.30001261",
     "dayjs": "^1.10.7",
     "dotenv": "^10.0.0",
     "faker": "^5.5.3",
