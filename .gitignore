@@ -1,0 +1,8 @@
+/build
+/node_modules
+/firebase.json
+.firebase
+.firebaserc
+.github
+.vscode
+.env
